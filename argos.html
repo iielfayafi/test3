@@ -25,7 +25,7 @@
 <img src="https://user-images.githubusercontent.com/43223061/45599060-1f5e8800-b9dd-11e8-8610-360a9d9f1733.png" /></a><br/>
  </center><br/><br/><br/><p style="color:white;">
  <script >
- function randomtext() {
+ window.onload = (function randomtext() {
     var randomtxt = [
         'Beautiful People are not always Good but Good people are always Beautiful!',
         '50% + 50% off <a href="/offers.html">check here</a>',
@@ -34,7 +34,7 @@
     return randomtxt[Math.floor((Math.random() * 3.99))];
 }
 
-document.getElementById("spam").innerHTML = randomtext();
+document.getElementById("spam").innerHTML = randomtext();)
  </script>
  <p id="spam"></p>
 </center>
