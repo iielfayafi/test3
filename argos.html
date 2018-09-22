@@ -24,7 +24,18 @@
 <a href="https://kind-bardeen-1a9c79.netlify.com/argore.html">
 <img src="https://user-images.githubusercontent.com/43223061/45599060-1f5e8800-b9dd-11e8-8610-360a9d9f1733.png" /></a><br/>
  </center><br/><br/><br/><p style="color:white;">
- <script async src="//jsfiddle.net/qVf8G/embed/js,css,result/"></script>
+ <script >
+ function randomtext() {
+    var randomtxt = [
+        'Beautiful People are not always Good but Good people are always Beautiful!',
+        '50% + 50% off <a href="/offers.html">check here</a>',
+        'New Arrivals <a href="/new.html">Click here<img src="http://mastimix.in/pictures/icon-new.gif"/></a>',
+        'We changed our terms and conditions > <a href="my link"> check </a>'];
+    return randomtxt[Math.floor((Math.random() * 3.99))];
+}
+
+document.getElementById("spam").innerHTML = randomtext();
+ </script>
  <p id="spam"></p>
 </center>
 </p></body>
