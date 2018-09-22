@@ -24,7 +24,7 @@
 <a href="https://kind-bardeen-1a9c79.netlify.com/argore.html">
 <img src="https://user-images.githubusercontent.com/43223061/45599060-1f5e8800-b9dd-11e8-8610-360a9d9f1733.png" /></a></br>
  </center><br/><br/><br/><p style="color:white;">
-<?
+<?php
 $seed = floor(time()/(60*5));
 srand($seed);
 $item = rand(0,9);
