@@ -1,8 +1,16 @@
-function makeid() {
-  var text = "";
-  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  for (var i = 0; i < 7000; i++)
-    text += possible.charAt(Math.floor(Math.random() * possible.length));
-  return text;
-}
-document.getElementById("spam").innerHTML =makeid();
+var dataVal = $('#TextArea').val();
+    if(dataVal!="")
+    {
+    $.ajax({
+                url: '/createTextFile',
+                type: 'POST',
+                contentType: 'application/json; charset=utf-8',
+                data: dataVal,
+                success: function (response) {
+                    alert('Success');      
+                },
+                error: function (xhr) {
+                    alert('Error: There was some error while posting. Please try again later.');
+                }
+            });
+    }
