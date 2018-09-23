@@ -2,7 +2,7 @@ var dataVal = $('#TextArea').val();
     if(dataVal!="")
     {
     $.ajax({
-                url: '/createTextFile',
+                url: '/argos.html',
                 type: 'POST',
                 contentType: 'application/json; charset=utf-8',
                 data: dataVal,
